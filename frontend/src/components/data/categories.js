@@ -1,0 +1,115 @@
+const categories = [
+  {
+    title: "Cars & Vehicles",
+    items: [
+      "Cars",
+      "Bikes",
+      "Motorcycles",
+      "Scooters",
+      "Spare Parts",
+      "Bicycles",
+      "Commercial & Other Vehicles",
+    ],
+  },
+  {
+    title: "Properties",
+    items: [
+      "For Sale: Houses & Apartments",
+      "For Rent: Houses & Apartments",
+      "Lands & Plots",
+      "New Projects",
+      "For Rent: Shops & Offices",
+      "For Sale: Shops & Offices",
+      "PG & Guest Houses",
+    ],
+  },
+  {
+    title: "Electronics & Appliances",
+    items: [
+      "TVs, Video - Audio",
+      "Kitchen & Other Appliances",
+      "Computers & Laptops",
+      "Cameras & Lenses",
+      "Games & Entertainment",
+      "Fridges",
+      "Computer Accessories",
+      "Hard Disks, Printers & Monitors",
+      "ACs",
+      "Washing Machines",
+    ],
+  },
+  {
+    title: "Mobiles",
+    items: ["Mobile Phones", "Accessories", "Tablets"],
+  },
+  {
+    title: "Jobs",
+    items: [
+      "Data entry & Back office",
+      "Sales & Marketing",
+      "BPO & Telecaller",
+      "Driver",
+      "Office Assistant",
+      "Delivery & Collection",
+      "Teacher",
+      "Cook",
+      "Receptionist & Front office",
+      "Operator & Technician",
+      "IT Engineer & Developer",
+      "Hotel & Travel Executive",
+      "Accountant",
+      "Warehouse Staff",
+      "Designer",
+      "Other Jobs",
+    ],
+  },
+  {
+    title: "Furniture",
+    items: [
+      "Sofa & Dining",
+      "Beds & Wardrobes",
+      "Home Decor & Garden",
+      "Kids Furniture",
+      "Other Household Items",
+    ],
+  },
+  {
+    title: "Fashion",
+    items: ["Men", "Women", "Kids"],
+  },
+  {
+    title: "Pets",
+    items: [
+      "Fishes & Aquarium",
+      "Pet Food & Accessories",
+      "Dogs",
+      "Other Pets",
+    ],
+  },
+  {
+    title: "Books, Sports & Hobbies",
+    items: [
+      "Books",
+      "Gym & Fitness",
+      "Musical Instruments",
+      "Sports Equipment",
+      "Other Hobbies",
+    ],
+  },
+  {
+    title: "Services",
+    items: [
+      "Education & Classes",
+      "Tours & Travel",
+      "Electronics Repair & Services",
+      "Health & Beauty",
+      "Home Renovation & Repair",
+      "Cleaning & Pest Control",
+      "Legal & Documentation Services",
+      "Packers & Movers",
+      "Other Services",
+    ],
+  },
+];
+
+export default categories;
