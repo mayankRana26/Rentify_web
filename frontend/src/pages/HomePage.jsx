@@ -5,7 +5,7 @@ import axios from 'axios';
 import HeroSection from '../components/HeroSection';
 
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const HomePage = () => {
   const [listings, setListings] = useState([]);

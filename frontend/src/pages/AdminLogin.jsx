@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-
+const API_URL = import.meta.env.VITE_API_URL;
+  
 const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -9,12 +10,12 @@ const AdminLogin = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/admin/login",
+        `${API_URL}/api/admin/login`,
         { email, password }
       );
       localStorage.setItem("adminToken", res.data.token);
       window.location.href = "/admin/dashboard";
-    } catch {
+    } catch (err) {
       alert("Invalid admin credentials");
     }
   };

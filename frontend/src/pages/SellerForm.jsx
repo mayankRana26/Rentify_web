@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { User, Mail, Phone, CreditCard, Building2, Landmark, Loader2 } from "lucide-react";
 
+const API_URL = import.meta.env.VITE_API_URL ;
+
 const SellerForm = () => {
   const [form, setForm] = useState({
     name: "",
@@ -24,7 +26,7 @@ const SellerForm = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/seller/kyc",
+        `${API_URL}/api/seller/kyc`,
         form,
         { withCredentials: true }
       );

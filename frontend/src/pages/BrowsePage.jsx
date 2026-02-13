@@ -5,7 +5,7 @@ import { useAuth } from "../context/AuthContext";
 import socket from "../socket";
 import toast from "react-hot-toast";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const BrowsePage = () => {
   const [items, setItems] = useState([]);

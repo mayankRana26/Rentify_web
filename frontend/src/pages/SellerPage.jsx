@@ -4,7 +4,7 @@ import { useAuth } from "../context/AuthContext";
 import Heroseller from "../components/seller/Heroseller";
 import SellerListingsGrid from "../components/SellerListingsGrid";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const SellerPage = () => {
   const { user } = useAuth();

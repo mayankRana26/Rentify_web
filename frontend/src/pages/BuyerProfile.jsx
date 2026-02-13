@@ -4,7 +4,7 @@ import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import { toast } from "react-hot-toast";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const BuyerProfile = () => {
   const { id } = useParams(); // buyer id

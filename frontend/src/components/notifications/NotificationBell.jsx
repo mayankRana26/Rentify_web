@@ -9,7 +9,7 @@ import { toast } from "react-hot-toast";
 // 🔔 audio
 import notificationSound from "../../assets/notification.mp3";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const NotificationBell = () => {
   const { token, user } = useAuth();

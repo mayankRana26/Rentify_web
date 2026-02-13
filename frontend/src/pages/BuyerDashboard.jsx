@@ -6,7 +6,7 @@ import socket from "../socket";
 import OrderStatus from "../components/OrderStatus";
 import { toast } from "react-hot-toast";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const BuyerDashboard = () => {
   const { token, user } = useAuth();

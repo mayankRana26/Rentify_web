@@ -4,7 +4,7 @@ import axios from 'axios'; // API call ke liye
 import ListingCard from './ListingCard';
 
 // Backend URL environment variable se lein
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const ListingGrid = ({ currentFilter }) => {
   // Data, loading, aur error ke liye state banayein

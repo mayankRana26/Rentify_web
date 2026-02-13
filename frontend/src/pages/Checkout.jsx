@@ -1,9 +1,11 @@
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL ;
+
 const Checkout = ({ sellerId }) => {
   const payNow = async () => {
     const { data } = await axios.post(
-      "http://localhost:8000/api/payments/create-order",
+      `${API_URL}/api/payments/create-order`,
       {
         amount: 1000,
         sellerId,

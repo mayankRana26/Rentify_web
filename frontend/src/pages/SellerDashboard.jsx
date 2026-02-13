@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 import socket from "../socket";
 import OrderStatus from "../components/OrderStatus";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const SellerDashboard = () => {
   const navigate = useNavigate();

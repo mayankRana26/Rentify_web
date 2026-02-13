@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 import UploadAvatar from "../components/UploadAvatar";
 
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const Profile = () => {
   const { user, token, updateUser } = useAuth();
