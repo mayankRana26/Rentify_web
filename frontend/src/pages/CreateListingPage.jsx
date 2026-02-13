@@ -297,4 +297,4 @@ const CreateListingPage = () => {
   );
 };
 
-export default CreateListingPage;
+export default CreateListingPage;
