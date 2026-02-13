@@ -50,6 +50,10 @@ io.on("connection", (socket) => {
 });
 
 // ROUTES
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/listings", listingRoutes);
 app.use("/api/transactions", transactionRoutes);
