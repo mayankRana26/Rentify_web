@@ -23,14 +23,27 @@ export const AuthProvider = ({ children }) => {
 
         axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 
-        const storedUser = localStorage.getItem("user");
-        if (!storedUser) {
-          setLoading(false);
-          return;
-        }
+       const storedUser = localStorage.getItem("user");
 
-        const parsedUser = JSON.parse(storedUser);
-        setUser(parsedUser);
+if (!storedUser || storedUser === "undefined") {
+  localStorage.removeItem("user");
+  setLoading(false);
+  return;
+}
+
+let parsedUser = null;
+
+try {
+  parsedUser = JSON.parse(storedUser);
+} catch (err) {
+  console.error("Invalid user in localStorage");
+  localStorage.removeItem("user");
+  setLoading(false);
+  return;
+}
+
+setUser(parsedUser);
+
 
         if (!socket.connected) {
           socket.connect();

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   // Get user & role from localStorage
-  const user = JSON.parse(localStorage.getItem("user"));
-  const role = user?.role; // "buyer" or "seller"
+const { user } = useAuth;
+const role = user?.role;
 
   return (
     <footer className="bg-gray-900 text-gray-300 mt-auto border-t border-gray-800">
